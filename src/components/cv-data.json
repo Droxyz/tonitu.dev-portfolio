@@ -1,0 +1,102 @@
+{
+    "contact": {
+      "name": "Toni Tuomaala",
+      "email": "toni.tuomaala@outlook.com",
+      "phone": "+358 50 505010966",
+      "linkedin": "https://www.linkedin.com/in/toni-tuomaala-4a967624a/",
+      "github": "https://github.com/Droxyz"
+    },
+    "aboutMe": {
+      "title": "Information technology student",
+      "summary": "I'm a passionate student with fun hobbies",
+      "skills": [
+        {
+          "name": "HTML",
+          "level": 2
+        },
+        {
+          "name": "CSS",
+          "level": 3
+        },
+        {
+          "name": "JavaScript",
+          "level": 2
+        },
+        {
+          "name": "React",
+          "level": 1
+        },
+        {
+          "name": "C",
+          "level": 3
+        }
+      ],
+      "likes": ["kickboxing", "wings", "gaming", "climbing", "motorcycles", "tech", "coffee", "youtube", "friends", "family"]
+    },
+    "experience": [
+      {
+        "position": "Fast food worker",
+        "company": "Burger King",
+        "location": "Kivihaka, Vaasa",
+        "startDate": "2018",
+        "endDate": "2020",
+        "description": "Customer service, fast working, food making, cleaning, hygiene",
+        "link": "https://burgerking.fi/toimipiste/burger-king-kivihaka/",
+        "skillsRequired": ["customer service", "burger"]
+      },
+      {
+        "position": "Fast food worker",
+        "company": "Burger King",
+        "location": "Kivihaka, Vaasa",
+        "startDate": "2018",
+        "endDate": "2020",
+        "description": "Customer service, fast working, food making, cleaning, hygiene",
+        "link": "https://burgerking.fi/toimipiste/burger-king-kivihaka/",
+        "skillsRequired": ["customer service", "burger"]
+      },
+      {
+        "position": "Fast food worker",
+        "company": "Burger King",
+        "location": "Kivihaka, Vaasa",
+        "startDate": "2018",
+        "endDate": "2020",
+        "description": "Customer service, fast working, food making, cleaning, hygiene",
+        "link": "https://burgerking.fi/toimipiste/burger-king-kivihaka/",
+        "skillsRequired": ["customer service", "burger"]
+      },
+      {
+        "position": "Operations staff",
+        "company": "Gigantti Vaasa",
+        "location": "Vaasa",
+        "startDate": "2020",
+        "endDate": "Present",
+        "description": "Product repair, troubleshoot, control and intake, Customer service, RMA/RFC",
+        "link": "https://www.gigantti.fi/store/gigantti-vaasa",
+        "skillsRequired": ["customer service", "maalaisjärki", "teamwork"]
+      },
+      {
+        "position": "internship",
+        "company": "Mico Botnia ",
+        "location": "Vaasa",
+        "startDate": "2019",
+        "endDate": "1 month",
+        "description": "Mostly workstation and windows installation. ",
+        "link": "https://www.micobotnia.fi/",
+        "skillsRequired": ["workstation install", "Windows", "networking"]
+      }
+    ],
+    "projects": [
+      {
+        "title": "ttwebsite",
+        "description": "Designed and built my personal portfolio website...",
+        "link": "",
+        "skillsRequired": ["React", "JavaScript", "CSS", "HTML"]
+      },
+      {
+        "title": "gameOfLife",
+        "description": "Works fully in CLI",
+        "link": "",
+        "skillsRequired": ["C"]
+      }
+    ]
+  }
