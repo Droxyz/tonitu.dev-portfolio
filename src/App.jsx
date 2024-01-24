@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import React, { useEffect, useState, useRef } from "react";
 import cvData from "./components/cv-data.json";
 import Experience from "./components/Experience";
+import About from "./components/About";
 
 function App() {
   const asdRef = (useRef < HTMLDivElement) | (null > null);
@@ -41,8 +42,8 @@ function App() {
     for (let i = 0; i < amount; i++) {
       const shape = getRandomShape();
       const style = {
-        top: `${Math.random() * (document.body.scrollHeight-200)}px`,
-        left: `${Math.random() * 80}%`,
+        top: `${Math.random() * (document.body.scrollHeight - 200)}px`,
+        left: `${Math.random() * 100}%`,
       };
 
       shapesArray.push(
@@ -57,60 +58,32 @@ function App() {
     return shapesArray;
   }
 
-  console.log(document.body.scrollHeight)
-  const shapes = createShapes(10); // Change the number of shapes as needed
+  const shapes = createShapes(10);
 
   return (
     <>
-      {shapes}
+      <div className="w-full absolute">{shapes}</div>
 
-      <div className={`flex flex-col min-h-screen`}>
-        <header className="sticky top-0 border-b-2 border-[var(--accent)] backdrop-blur-lg px-10">
-          <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-        </header>
-        <div className="hero flex-grow">
-          <div class="line"></div>
-          <p>
-            testasdhjknoadsijnobasdijnoasdonjasdjnonad
-            jostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadj
-            ostestasdhjknoadsijnobasdijnoasdonjasdjnona
-            djostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadjos
-            testasdhjknoadsijnobasdijnoasdonjasdjnonad
-            jostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadj
-            ostestasdhjknoadsijnobasdijnoasdonjasdjnona
-            djostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadjos
-            testasdhjknoadsijnobasdijnoasdonjasdjnonad
-            jostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadj
-            ostestasdhjknoadsijnobasdijnoasdonjasdjnona
-            djostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadjos
-            testasdhjknoadsijnobasdijnoasdonjasdjnonad
-            jostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadj
-            ostestasdhjknoadsijnobasdijnoasdonjasdjnona
-            djostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadjos
-            testasdhjknoadsijnobasdijnoasdonjasdjnonad
-            jostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadjo
-            stestasdhjknoadsijnobasdijnoasdonjasdjnona
-            djostestasdhjknoadsijnobasdijnoasdonjasdjnonadjostes
-            tasdhjknoadsijnobasdijnoasdonjasdjnonadjos
-          </p>
+      <header className="fixed w-full top-0 border-b-2 border-[var(--accent)] backdrop-blur-3xl px-10 z-10">
+        <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+      </header>
+
+      <div className={`fixed right-0 p-2 z-[-1]`}>
+        <div className="absolute top-0 right-0  w-[100vw] h-[100vw] md:w-[80vw] md:h-[80vw] max-h-[200vh] z-[-1]">
+          <div
+            className={`radial-gradient ${darkMode ? "dark" : "light"}`}
+          ></div>
         </div>
       </div>
 
-      <main className=" container mx-auto px-10 ">
+
+      <main className="flex flex-col container mx-auto px-10 gap-20 w-full lg:w-[80vw]">
+        <About />
 
         <Experience cvData={cvData} />
-
         <p>This is test text</p>
       </main>
+
       <footer className="dark:bg-black bg-violet-900 text-white p-4 border-t w-full">
         <Footer />
       </footer>

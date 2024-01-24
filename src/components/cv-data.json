@@ -45,26 +45,6 @@
         "skillsRequired": ["customer service", "burger"]
       },
       {
-        "position": "Fast food worker",
-        "company": "Burger King",
-        "location": "Kivihaka, Vaasa",
-        "startDate": "2018",
-        "endDate": "2020",
-        "description": "Customer service, fast working, food making, cleaning, hygiene",
-        "link": "https://burgerking.fi/toimipiste/burger-king-kivihaka/",
-        "skillsRequired": ["customer service", "burger"]
-      },
-      {
-        "position": "Fast food worker",
-        "company": "Burger King",
-        "location": "Kivihaka, Vaasa",
-        "startDate": "2018",
-        "endDate": "2020",
-        "description": "Customer service, fast working, food making, cleaning, hygiene",
-        "link": "https://burgerking.fi/toimipiste/burger-king-kivihaka/",
-        "skillsRequired": ["customer service", "burger"]
-      },
-      {
         "position": "Operations staff",
         "company": "Gigantti Vaasa",
         "location": "Vaasa",
@@ -76,13 +56,46 @@
       },
       {
         "position": "internship",
-        "company": "Mico Botnia ",
+        "company": "Mico Botnia",
         "location": "Vaasa",
         "startDate": "2019",
         "endDate": "1 month",
         "description": "Mostly workstation and windows installation. ",
         "link": "https://www.micobotnia.fi/",
         "skillsRequired": ["workstation install", "Windows", "networking"]
+      },
+      {
+        "position": "Datanomi student",
+        "company": "Vamia",
+        "location": "Vaasa",
+        "startDate": "2018",
+        "endDate": "2021",
+        "description": "Vocational qualification in information and communications technology. 180 competence points.",
+        "moreInfo": "GPA 3",
+        "link": "https://www.micobotnia.fi/",
+        "skillsRequired": ["service support", "software development"]
+      }, 
+      {
+        "position": "BEng student",
+        "company": "VAMK ",
+        "location": "Vaasa",
+        "startDate": "2022",
+        "endDate": "Present",
+        "description": "2nd year student in information technology",
+        "moreInfo": "GPA 3.5",
+        "link": "https://www.micobotnia.fi/",
+        "skillsRequired": ["Iot & cyber security", "Developing applications"]
+      }, 
+      {
+        "position": "Conscription",
+        "company": "Puolustusvoimat",
+        "location": "Vaasa",
+        "startDate": "2021",
+        "endDate": "2022",
+        "description": "",
+        "moreInfo": "Mandatory military service.",
+        "link": "https://www.micobotnia.fi/",
+        "skillsRequired": ["Leadership", "Teamwork", "vänrikki"]
       }
     ],
     "projects": [

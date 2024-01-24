@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Alegreya%20Sans%20SC:700|Alegreya%20Sans%20SC:400");
+@import url("http://fonts.googleapis.com/css?family=Roboto");
 
 @tailwind base;
 @tailwind components;
@@ -7,26 +8,29 @@
 @layer base {
   :root[data-theme="light"] {
     --text: #03011e;
-    --text-opposite: #e3e1fe;
     --background: #ececfe;
+    --background2: #79d5ff;
     --primary: #cc92fc;
-    --secondary: #fedcfc;
+    --secondary: #ffc5fb;
     --accent: #f915ee;
   }
   :root[data-theme="dark"] {
     --text: #e3e1fe;
-    --text-opposite: #03011e;
     --background: #010114;
+    --background2: #001e30;
     --primary: #3d036d;
     --secondary: #230121;
     --accent: #ea06de;
+
   }
 
   body {
-    background: var(--background);
+    background: linear-gradient(var(--secondary),  var(--background) 2%, var(--background) 40%, var(--background2));
+    /*background: var(--background);*/
     color: var(--text);
     font-family: "Alegreya Sans SC", sans-serif;
     font-size: 1rem;
+    overflow-x: hidden;
   }
 
   .bg-image {
@@ -39,10 +43,32 @@
     @apply text-sm md:text-md lg:text-lg xl:text-xl;
   }
 
-  h1,
-  h2,
-  h3 {
-    @apply text-xl md:text-3xl lg:text-3xl xl:text-4xl;
+  h1 {
+    @apply text-xl md:text-2xl lg:text-2xl xl:text-3xl;
+  }
+  h2, h3 {
+    @apply text-md md:text-xl lg:text-xl xl:text-2xl;
+  }
+
+  li > a {
+    text-shadow: 3px 0px 3px var(--background);
+  }
+
+
+  a {
+    text-decoration: none; /* Removes the underline */
+    color: #007bff; /* Initial link color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transformation */
+  }
+  
+  a:hover, a:focus {
+    color: #0056b3; /* Color change on hover/focus */
+    transform: scale(1.1); /* Slightly enlarges the link */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Subtle text shadow for depth */
+  }
+  
+  a:active {
+    transform: scale(0.9); /* Slightly reduces size when clicked */
   }
 
   .radial-gradient {
@@ -82,8 +108,9 @@
   .line {
     width: 200px; /* Adjust the width as needed */
     height: 100px; /* Adjust the height as needed */
-    background-color: #ff0000; /* Adjust the background color as needed */
-    clip-path: polygon(0 0, 23% 67%, 100% 100%);
+    background-image: url("Dall-e.png");
+    object-fit: contain;
+    clip-path: polygon(25% 0%, 30% 0, 5% 100%, 0% 100%);
   }
 
   .circle {
