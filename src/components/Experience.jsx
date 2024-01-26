@@ -39,7 +39,6 @@ function Experience(props) {
           }`}
           onClick={() => {
             isClicked ? setClickedCard(null) : setClickedCard(position); // Set the clicked card
-            console.log(position); // Log the clicked card
           }}
         >
           <div className="flex flex-col gap-2">
@@ -53,7 +52,7 @@ function Experience(props) {
             <div className="information-container">
               <p style={{ fontFamily: "Roboto" }}>{position.description}</p>
             </div>
-            <div className={isClicked ? `flex` : `hidden`}></div>
+            <div className={isClicked ? `flex` : `hidden`}>{position.moreInfo}</div>
             <div className="flex flex-wrap gap-x-4">
               {position.skillsRequired.map((skill, skillIndex) => (
                 <li key={skillIndex}>{skill}</li>
@@ -76,7 +75,7 @@ function Experience(props) {
   return (
     <>
       <div className="relative flex flex-col">
-        <h1 className="">EXPERIENCE</h1>
+        <h1 className="font-bold">EXPERIENCE</h1>
         {experienceElements}
         <div className="absolute h-full w-full hidden md:flex items-center justify-center overflow-hidden z-[-1]">
           <p className="absolute top-0 backdrop-blur-sm border border-[var(--accent)] p-1 rounded-md">

@@ -1,115 +1,131 @@
 {
-    "contact": {
-      "name": "Toni Tuomaala",
-      "email": "toni.tuomaala@outlook.com",
-      "phone": "+358 50 505010966",
-      "linkedin": "https://www.linkedin.com/in/toni-tuomaala-4a967624a/",
-      "github": "https://github.com/Droxyz"
-    },
-    "aboutMe": {
-      "title": "Information technology student",
-      "summary": "I'm a passionate student with fun hobbies",
-      "skills": [
-        {
-          "name": "HTML",
-          "level": 2
-        },
-        {
-          "name": "CSS",
-          "level": 3
-        },
-        {
-          "name": "JavaScript",
-          "level": 2
-        },
-        {
-          "name": "React",
-          "level": 1
-        },
-        {
-          "name": "C",
-          "level": 3
-        }
-      ],
-      "likes": ["kickboxing", "wings", "gaming", "climbing", "motorcycles", "tech", "coffee", "youtube", "friends", "family"]
-    },
-    "experience": [
+  "contact": {
+    "name": "Toni Tuomaala",
+    "email": "toni.tuomaala@outlook.com",
+    "phone": "+358 50 505010966",
+    "linkedin": "https://www.linkedin.com/in/toni-tuomaala-4a967624a/",
+    "github": "https://github.com/Droxyz"
+  },
+  "aboutMe": {
+    "title": "Information technology student",
+    "summary": "I'm a passionate student with fun hobbies",
+    "skills": [
       {
-        "position": "Fast food worker",
-        "company": "Burger King",
-        "location": "Kivihaka, Vaasa",
-        "startDate": "2018",
-        "endDate": "2020",
-        "description": "Customer service, fast working, food making, cleaning, hygiene",
-        "link": "https://burgerking.fi/toimipiste/burger-king-kivihaka/",
-        "skillsRequired": ["customer service", "burger"]
+        "category": "Programming Languages",
+        "items": [
+          { "name": "JavaScript", "level": "intermediate" },
+          { "name": "C", "level": "Intermediate" }
+        ]
       },
       {
-        "position": "Operations staff",
-        "company": "Gigantti Vaasa",
-        "location": "Vaasa",
-        "startDate": "2020",
-        "endDate": "Present",
-        "description": "Product repair, troubleshoot, control and intake, Customer service, RMA/RFC",
-        "link": "https://www.gigantti.fi/store/gigantti-vaasa",
-        "skillsRequired": ["customer service", "maalaisjärki", "teamwork"]
+        "category": "Frameworks, tools etc.",
+        "items": [
+          { "name": "React", "level": "Intermediate" },
+          { "name": "Git", "level": "Intermediate" },
+          { "name": "Docker", "level": "Beginner" },
+          { "name": "Linux", "level": "Advanced intermediate" }
+        ]
       },
       {
-        "position": "internship",
-        "company": "Mico Botnia",
-        "location": "Vaasa",
-        "startDate": "2019",
-        "endDate": "1 month",
-        "description": "Mostly workstation and windows installation. ",
-        "link": "https://www.micobotnia.fi/",
-        "skillsRequired": ["workstation install", "Windows", "networking"]
-      },
-      {
-        "position": "Datanomi student",
-        "company": "Vamia",
-        "location": "Vaasa",
-        "startDate": "2018",
-        "endDate": "2021",
-        "description": "Vocational qualification in information and communications technology. 180 competence points.",
-        "moreInfo": "GPA 3",
-        "link": "https://www.micobotnia.fi/",
-        "skillsRequired": ["service support", "software development"]
-      }, 
-      {
-        "position": "BEng student",
-        "company": "VAMK ",
-        "location": "Vaasa",
-        "startDate": "2022",
-        "endDate": "Present",
-        "description": "2nd year student in information technology",
-        "moreInfo": "GPA 3.5",
-        "link": "https://www.micobotnia.fi/",
-        "skillsRequired": ["Iot & cyber security", "Developing applications"]
-      }, 
-      {
-        "position": "Conscription",
-        "company": "Puolustusvoimat",
-        "location": "Vaasa",
-        "startDate": "2021",
-        "endDate": "2022",
-        "description": "",
-        "moreInfo": "Mandatory military service.",
-        "link": "https://www.micobotnia.fi/",
-        "skillsRequired": ["Leadership", "Teamwork", "vänrikki"]
+        "category": "Languages",
+        "items": [
+          { "name": "English", "level": "C" },
+          { "name": "Finnish", "level": "Mother language" },
+          { "name": "Swedish", "level": "B1" },
+          { "name": "Spanish", "level": "A1" }
+        ]
       }
     ],
-    "projects": [
-      {
-        "title": "ttwebsite",
-        "description": "Designed and built my personal portfolio website...",
-        "link": "",
-        "skillsRequired": ["React", "JavaScript", "CSS", "HTML"]
-      },
-      {
-        "title": "gameOfLife",
-        "description": "Works fully in CLI",
-        "link": "",
-        "skillsRequired": ["C"]
-      }
+    "likes": [
+      "kickboxing",
+      "wings",
+      "gaming",
+      "climbing",
+      "motorcycles",
+      "tech",
+      "coffee",
+      "youtube",
+      "friends",
+      "family"
     ]
-  }
+  },
+  "experience": [
+    {
+      "position": "Fast food worker",
+      "company": "Burger King",
+      "location": "Kivihaka, Vaasa",
+      "startDate": "2018",
+      "endDate": "2020",
+      "description": "Customer service, fast working, food making, cleaning, hygiene",
+      "link": "https://burgerking.fi/toimipiste/burger-king-kivihaka/",
+      "skillsRequired": ["customer service", "burger"]
+    },
+    {
+      "position": "Operations staff",
+      "company": "Gigantti Vaasa",
+      "location": "Vaasa",
+      "startDate": "2020",
+      "endDate": "Present",
+      "description": "Product repair, troubleshoot, control and intake, Customer service, RMA/RFC",
+      "link": "https://www.gigantti.fi/store/gigantti-vaasa",
+      "skillsRequired": ["customer service", "maalaisjärki", "teamwork"]
+    },
+    {
+      "position": "internship",
+      "company": "Mico Botnia",
+      "location": "Vaasa",
+      "startDate": "2019",
+      "endDate": "1 month",
+      "description": "Mostly workstation and windows installation. ",
+      "link": "https://www.micobotnia.fi/",
+      "skillsRequired": ["workstation install", "Windows", "networking"]
+    },
+    {
+      "position": "Datanomi student",
+      "company": "Vamia",
+      "location": "Vaasa",
+      "startDate": "2018",
+      "endDate": "2021",
+      "description": "Vocational qualification in information and communications technology. 180 competence points.",
+      "moreInfo": "GPA 3",
+      "link": "https://www.micobotnia.fi/",
+      "skillsRequired": ["service support", "software development"]
+    },
+    {
+      "position": "BEng student",
+      "company": "VAMK ",
+      "location": "Vaasa",
+      "startDate": "2022",
+      "endDate": "Present",
+      "description": "2nd year student in information technology",
+      "moreInfo": "GPA 3.6",
+      "link": "https://www.micobotnia.fi/",
+      "skillsRequired": ["Iot & cyber security", "Developing applications"]
+    },
+    {
+      "position": "Conscription",
+      "company": "Puolustusvoimat",
+      "location": "Vaasa",
+      "startDate": "2021",
+      "endDate": "2022",
+      "description": "",
+      "moreInfo": "Mandatory military service.",
+      "link": "https://www.micobotnia.fi/",
+      "skillsRequired": ["Leadership", "Teamwork", "vänrikki"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "ttwebsite",
+      "description": "Designed and built my personal portfolio website...",
+      "link": "",
+      "skillsRequired": ["React", "JavaScript", "CSS", "HTML", "C"]
+    },
+    {
+      "title": "gameOfLife",
+      "description": "Works fully in CLI",
+      "link": "",
+      "skillsRequired": ["React", "JavaScript", "CSS", "HTML", "C"]
+    }
+  ]
+}

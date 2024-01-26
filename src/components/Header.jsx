@@ -1,29 +1,29 @@
 import { FaMoon, FaSun } from "react-icons/fa";
 
-const Header = ({ darkMode, toggleDarkMode }) => {
+const Header = ({ darkMode, toggleDarkMode, onHomeClick, onExperienceClick, onSkillsClick, onContactClick }) => {
   return (
     <>
       <div className="flex w-full justify-between items-center py-4 container mx-auto">
-        <h1 className="text-lg font-bold">tonitu</h1>
+        <img src="tonitu.png" alt="TONITU" className=" max-h-10" />
         <nav>
           <ul className="flex gap-4 text">
             <li>
-              <a href="/" className="hover:underline">
+              <a onClick={onHomeClick}>
                 Home
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:underline">
-                Projects
+              <a onClick={onExperienceClick}>
+                Experience
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:underline">
+              <a onClick={onSkillsClick}>
                 Skills
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:underline">
+              <a onClick={onContactClick}>
                 Contact
               </a>
             </li>

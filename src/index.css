@@ -21,11 +21,16 @@
     --primary: #3d036d;
     --secondary: #230121;
     --accent: #ea06de;
-
   }
 
   body {
-    background: linear-gradient(var(--secondary),  var(--background) 2%, var(--background) 40%, var(--background2));
+    background: linear-gradient(
+      var(--secondary),
+      var(--background) 2%,
+      var(--background) 40%,
+      var(--background2) 80%,
+      var(--background2)
+    );
     /*background: var(--background);*/
     color: var(--text);
     font-family: "Alegreya Sans SC", sans-serif;
@@ -46,7 +51,8 @@
   h1 {
     @apply text-xl md:text-2xl lg:text-2xl xl:text-3xl;
   }
-  h2, h3 {
+  h2,
+  h3 {
     @apply text-md md:text-xl lg:text-xl xl:text-2xl;
   }
 
@@ -54,19 +60,20 @@
     text-shadow: 3px 0px 3px var(--background);
   }
 
-
   a {
     text-decoration: none; /* Removes the underline */
     color: #007bff; /* Initial link color */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transformation */
   }
-  
-  a:hover, a:focus {
+
+  a:hover,
+  a:focus {
+    cursor: pointer;
     color: #0056b3; /* Color change on hover/focus */
     transform: scale(1.1); /* Slightly enlarges the link */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Subtle text shadow for depth */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
   }
-  
+
   a:active {
     transform: scale(0.9); /* Slightly reduces size when clicked */
   }
@@ -144,5 +151,42 @@
     height: 138.56px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background: var(--secondary); /* Hexagon shape with a solid color */
+  }
+
+  .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 83px;
+  }
+
+  .wave .shape-fill {
+    fill: var(--background2);
+  }
+
+  .post-scroll-animation {
+    /* Example: fade in the body's content after scrolling */
+    animation: fadeIn 1s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      transform: translateY(25%);
+      scale: 0.8;
+      opacity: 0.5;
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+    }
   }
 }

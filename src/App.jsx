@@ -4,9 +4,34 @@ import React, { useEffect, useState, useRef } from "react";
 import cvData from "./components/cv-data.json";
 import Experience from "./components/Experience";
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 function App() {
-  const asdRef = (useRef < HTMLDivElement) | (null > null);
+  const experienceRef = useRef(null);
+  const skillsRef = useRef(null);
+  const contactRef = useRef(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const scrollToRef = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop - 100,
+      behavior: "smooth",
+    });
+    // Add post-scroll animation class to the ref's current DOM element
+    ref.current.classList.add("post-scroll-animation");
+
+    setTimeout(() => {
+      // Remove the post-scroll animation class to reset the state
+      ref.current.classList.remove("post-scroll-animation");
+    }, 1000); // This duration should match the length of the post-scroll animation
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   // Load the user's theme preference from localStorage, default to system preference
   const initialDarkMode =
@@ -30,6 +55,11 @@ function App() {
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
+  const handleClick = () => {
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 500); // Reset animation state after 0.5s
+  };
+
   function getRandomShape() {
     const shapes = ["circle", "rectangle", "pentagon", "hexagon"];
     const randomIndex = Math.floor(Math.random() * shapes.length);
@@ -42,7 +72,7 @@ function App() {
     for (let i = 0; i < amount; i++) {
       const shape = getRandomShape();
       const style = {
-        top: `${Math.random() * (document.body.scrollHeight - 200)}px`,
+        top: `${Math.random() * (document.body.scrollHeight - 300)}px`,
         left: `${Math.random() * 100}%`,
       };
 
@@ -65,7 +95,15 @@ function App() {
       <div className="w-full absolute">{shapes}</div>
 
       <header className="fixed w-full top-0 border-b-2 border-[var(--accent)] backdrop-blur-3xl px-10 z-10">
-        <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+        <Header
+          toggleDarkMode={toggleDarkMode}
+          darkMode={darkMode}
+          onHomeClick={() => scrollToTop()}
+          onExperienceClick={() => scrollToRef(experienceRef)}
+          onSkillsClick={() => scrollToRef(skillsRef)}
+          onContactClick={() => scrollToRef(contactRef)}
+          // Add other onClick handlers for other sections
+        />
       </header>
 
       <div className={`fixed right-0 p-2 z-[-1]`}>
@@ -76,15 +114,35 @@ function App() {
         </div>
       </div>
 
-
       <main className="flex flex-col container mx-auto px-10 gap-20 w-full lg:w-[80vw]">
-        <About />
-
-        <Experience cvData={cvData} />
-        <p>This is test text</p>
+        <div>
+          <About />
+        </div>
+        <div ref={experienceRef}>
+          <Experience cvData={cvData} />
+        </div>
+        <div ref={skillsRef}>
+          <Skills cvData={cvData} />
+        </div>
       </main>
 
-      <footer className="dark:bg-black bg-violet-900 text-white p-4 border-t w-full">
+      <footer
+        ref={contactRef}
+        className="relative bg-[var(--background)] p-4 w-full"
+      >
+        <div class="wave">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <Footer />
       </footer>
     </>
