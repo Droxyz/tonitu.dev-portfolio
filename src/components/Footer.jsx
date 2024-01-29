@@ -3,14 +3,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="bg-[var(--background)] p-20 mx-10 flex flex-col md:flex-row">
+    <div className="bg-[var(--background)] p-10 md:p-20 mx-10 flex flex-col md:flex-row">
       <h1 className="font-[a] text-4xl py-4 basis-1/3 ">
         Interested? Let me know
       </h1>
-      <div className="ml-10 mt-5 basis-2/3 lg:items-center ">
+      <div className="ml-0 md:ml-10 mt-5 basis-2/3 lg:items-center ">
         <ul className="flex flex-col gap-3">
           <li className="flex">
-            <a href=""></a>
             <p>toni.tuomaala@outlook.com</p>
           </li>
           <li className="flex gap-5">

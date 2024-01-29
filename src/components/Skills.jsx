@@ -1,59 +1,6 @@
-import React, { useEffect, useState } from "react";
-
-const FullStar = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 100 100"
-  >
-    <polygon
-      points="50,0 61.8,38.2 100,38.2 70.9,61.8 82.1,100 50,76.4 17.9,100 29.1,61.8 0,38.2 38.2,38.2"
-      fill="yellow"
-    />
-  </svg>
-);
-const EmptyStar = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 100 100"
-  >
-    <polygon
-      points="50,0 61.8,38.2 100,38.2 70.9,61.8 82.1,100 50,76.4 17.9,100 29.1,61.8 0,38.2 38.2,38.2"
-      stroke="yellow"
-      fill="none"
-    />
-  </svg>
-);
 
 export default function Skills(props) {
   const skills = props.cvData.aboutMe.skills;
-
-  const [selectedSkill, setSelectedSkill] = useState(null);
-  const [filteredProjects, setFilteredProjects] = useState([""]);
-
-  function selectSkill(clickedSkill) {
-    if (selectedSkill === clickedSkill) {
-      setSelectedSkill(null);
-      setFilteredProjects([]); // Clear filtered projects
-    } else {
-      setSelectedSkill(clickedSkill);
-
-      // Filter projects based on the clicked skill
-      const projectsWithSkill = profile.projects.filter((project) =>
-        project.skillsRequired.includes(clickedSkill)
-      );
-
-      setFilteredProjects(projectsWithSkill);
-    }
-  }
-
-  useEffect(() => {
-    const skillText = document.getElementById(selectedSkill);
-    console.log("selectedSkill changed to: " + selectedSkill);
-  }, [selectedSkill]);
 
   return (
     <div className="max-w-4xl p-5">

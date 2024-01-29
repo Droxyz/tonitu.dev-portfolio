@@ -1,18 +1,10 @@
 import React, { useState } from "react";
 import TypeWriter from "./TypeWriter";
 import {
-  FaArrowAltCircleUp,
-  FaArrowUp,
-  FaArrowsAlt,
-  FaArrowsAltH,
-  FaCartArrowDown,
-  FaFile,
   FaGithub,
   FaHeart,
-  FaLink,
   FaLinkedin,
   FaLinkedinIn,
-  FaRegArrowAltCircleUp,
 } from "react-icons/fa";
 
 export default function About() {

@@ -61,21 +61,21 @@
   }
 
   a {
-    text-decoration: none; /* Removes the underline */
-    color: #007bff; /* Initial link color */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transformation */
+    text-decoration: none; 
+    color: #007bff; 
+    transition: color 0.3s ease, transform 0.3s ease; 
   }
 
   a:hover,
   a:focus {
     cursor: pointer;
-    color: #0056b3; /* Color change on hover/focus */
-    transform: scale(1.1); /* Slightly enlarges the link */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+    color: #0056b3; 
+    transform: scale(1.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   }
 
   a:active {
-    transform: scale(0.9); /* Slightly reduces size when clicked */
+    transform: scale(0.9); 
   }
 
   .radial-gradient {
@@ -113,44 +113,11 @@
   }
 
   .line {
-    width: 200px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+    width: 200px;
+    height: 100px; 
     background-image: url("Dall-e.png");
     object-fit: contain;
     clip-path: polygon(25% 0%, 30% 0, 5% 100%, 0% 100%);
-  }
-
-  .circle {
-    width: 100px;
-    height: 100px;
-    background-image: url("/Dall-e.png");
-    border-radius: 50%;
-  }
-
-  .rectangle {
-    width: 200px;
-    height: 100px;
-    background: var(--accent); /* Hexagon shape with a solid color */
-  }
-
-  .pentagon {
-    width: 100px;
-    height: 100px;
-    clip-path: polygon(
-      50% 0%,
-      100% 38%,
-      82% 100%,
-      18% 100%,
-      0% 38%
-    ); /* Pentagon shape */
-    background: var(--primary); /* Hexagon shape with a solid color */
-  }
-
-  .hexagon {
-    width: 120px;
-    height: 138.56px;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    background: var(--secondary); /* Hexagon shape with a solid color */
   }
 
   .wave {
@@ -174,7 +141,6 @@
   }
 
   .post-scroll-animation {
-    /* Example: fade in the body's content after scrolling */
     animation: fadeIn 1s;
   }
 

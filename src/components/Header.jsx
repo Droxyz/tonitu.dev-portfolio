@@ -3,12 +3,12 @@ import { FaMoon, FaSun } from "react-icons/fa";
 const Header = ({ darkMode, toggleDarkMode, onHomeClick, onExperienceClick, onSkillsClick, onContactClick }) => {
   return (
     <>
-      <div className="flex w-full justify-between items-center py-4 container mx-auto">
-        <img src="tonitu.png" alt="TONITU" className=" max-h-10" />
+      <div className="w-full flex justify-between items-center py-4 container mx-auto flex-wrap">
+        <img src="tonitu.png" alt="TONITU" className="max-h-8 md:max-h-10" onClick={onHomeClick}/>
         <nav>
           <ul className="flex gap-4 text">
             <li>
-              <a onClick={onHomeClick}>
+              <a onClick={onHomeClick} className="hidden md:block">
                 Home
               </a>
             </li>
