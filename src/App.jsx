@@ -5,11 +5,13 @@ import cvData from "./components/cv-data.json";
 import Experience from "./components/Experience";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   const experienceRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
+  const projectsRef = useRef(null);
 
   const scrollToRef = (ref) => {
     window.scrollTo({
@@ -79,7 +81,7 @@ function App() {
         </div>
       </div>
 
-      <main className="flex flex-col container mx-auto px-10 gap-20 w-full lg:w-[80vw]">
+      <main className="flex flex-col container mx-auto px-10 gap-20 w-full lg:w-[80vw] pb-20">
         <div>
           <About />
         </div>
@@ -88,6 +90,10 @@ function App() {
         </div>
         <div ref={skillsRef}>
           <Skills cvData={cvData} />
+        </div>
+        <div ref={projectsRef}>
+          <Projects projects={cvData.projects}/>
+          
         </div>
       </main>
 

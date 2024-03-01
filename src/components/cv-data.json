@@ -68,7 +68,7 @@
       "endDate": "Present",
       "description": "Product repair, troubleshoot, control and intake, Customer service, RMA/RFC",
       "link": "https://www.gigantti.fi/store/gigantti-vaasa",
-      "skillsRequired": ["customer service", "maalaisjärki", "teamwork"]
+      "skillsRequired": ["customer service", "teamwork", "SAP end-user"]
     },
     {
       "position": "internship",
@@ -116,16 +116,27 @@
   ],
   "projects": [
     {
-      "title": "ttwebsite",
-      "description": "Designed and built my personal portfolio website...",
+      "title": "This website",
+      "description": "Portfolio website",
       "link": "",
-      "skillsRequired": ["React", "JavaScript", "CSS", "HTML", "C"]
+      "skillsRequired": ["React", "Vite", "tailwindcss"],
+      "video": "tonitudev.mp4",
+      "thumbnail": "tonitudev.png"
     },
     {
+      "title": "Pet Clinic",
+      "description": "Client/admin application for pet data and pet visits.",
+      "link": "",
+      "skillsRequired": ["React", "bootstrap", "jwt", "nodemon"],
+      "video": "pet-clinic.mp4",
+      "thumbnail": "petclinic.png"
+    },    {
       "title": "gameOfLife",
       "description": "Works fully in CLI",
       "link": "",
-      "skillsRequired": ["React", "JavaScript", "CSS", "HTML", "C"]
+      "skillsRequired": ["C", "compiler"],
+      "video": "gameoflifec.mp4",
+      "thumbnail": "gameoflife.png"
     }
   ]
 }

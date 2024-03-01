@@ -75,7 +75,7 @@ export default function About() {
           IT field, I'm currently seeking to expand my expertise in technology.
           I am interested about exploring various IT roles, especially those
           that leverage my skills. Eager to join a team where I can contribute
-          and glow, I look forward to connecting with like-minded professionals.
+          and grow, I look forward to connecting with like-minded professionals.
         </p>
         <div className="flex gap-10 my-3">
           Open cv:
